@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  bug-collectionview
 //
-//  Created by Eric Degrange on 20/10/2019.
+//  Created by Skrewx on 20/10/2019.
 //  Copyright © 2019 Nothing. All rights reserved.
 //
 
@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = ViewController()
+        self.window = window
+        window.makeKeyAndVisible()
+        
         return true
     }
 
